@@ -1,0 +1,7 @@
+[user]
+	email = henrim3@rpi.edu
+	name = Matti Henriksen
+[credential]
+	helper = store
+[init]
+	defaultBranch = main

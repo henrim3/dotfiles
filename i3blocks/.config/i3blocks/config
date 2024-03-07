@@ -1,0 +1,38 @@
+[sleep]
+full_text=  󰒲  
+command=loginctl suspend &> /dev/null && echo " 󰒲  "
+
+[display]
+full_text=  󰍹  
+command=autorandr --change &> /dev/null  && autorandr 2> /dev/null | awk '/(current)/ { printf(" 󰍹  %s \n", $1) }'
+
+[sound]
+full_text= 🔇:  0% 
+command=~/.config/i3blocks/sound/sound_info.sh
+interval=1
+color=#DFA06E
+
+[disk]
+command=df -h / | awk '/\//{ printf(" 󰋊 %4s/%s \n", $3, $2) }'
+interval=10
+color=#C9E3DB
+
+[memory]
+command=free -h | awk '/Mem:/ { printf(" 󰍛 %5s/%s \n", $3, $2) }'
+interval=10
+color=#FEC925
+
+[network]
+command= nmcli | grep 'wlp1s0: connected' | awk '/wlp1s0:/ { printf("   %s \n", $4) } { printf(" 󰖪  \n") }'
+interval=10
+color=#C6E0FF
+
+[battery]
+command=~/.config/i3blocks/battery/battery_info.sh
+interval=10
+color=#9CC4B2
+
+[time]
+command=date +" %a, %d %b - %I:%M %p "
+interval=30
+color=#F5F3BB
