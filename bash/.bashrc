@@ -29,10 +29,15 @@ alias ll="eza --long --header --inode --git"
 alias cp="cp -i"
 alias mv="mv -i"
 alias rm="trash -v"
+alias c="clear"
+
+# Tmux Aliases
 alias tmux="TERM=tmux-256color tmux"
 alias ta="tmux a"
-alias tl="tmux list-sessions"
-alias c="clear"
+alias tas="tmux a -t"
+alias tls="tmux list-sessions"
+alias tks="tmux kill-session -t"
+alias tns="tmux new -s"
 
 # Fix Postman
 alias postman="postman --disable-gpu"

@@ -1,3 +1,4 @@
 return {
-  "drewtempelmeyer/palenight.vim",
+    "drewtempelmeyer/palenight.vim",
+    lazy = false,
 }

@@ -12,11 +12,11 @@ return {
             require("harpoon.ui").toggle_quick_menu()
         end)
 
-        vim.keymap.set("n", "<C-h>", function ()
+        vim.keymap.set("n", "<leader>;", function ()
             require("harpoon.ui").nav_next()
         end)
 
-        vim.keymap.set("n", "<C-t>", function ()
+        vim.keymap.set("n", "<leader>,", function ()
             require("harpoon.ui").nav_prev()
         end)
     end
