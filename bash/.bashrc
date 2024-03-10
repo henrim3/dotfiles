@@ -22,9 +22,11 @@ xset -b
 
 # Environment Variables
 export EDITOR=/usr/bin/nvim
+export VISUAL=/usr/bin/nvim
 export PATH=$PATH:/home/matti/tools/flutter/bin
 
 # Aliases
+alias vim="nvim"
 alias ll="eza --long --header --inode --git"
 alias cp="cp -i"
 alias mv="mv -i"

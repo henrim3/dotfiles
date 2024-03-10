@@ -5,6 +5,7 @@ return {
         'stevearc/dressing.nvim',
     },
     config = function ()
+        require("flutter-tools").setup()
         vim.keymap.set("n", "<leader>fe", ":FlutterEmulators<CR>")
         vim.keymap.set("n", "<leader>fs", ":FlutterRun<CR>")
     end,
