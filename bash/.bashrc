@@ -41,6 +41,9 @@ alias tls="tmux list-sessions"
 alias tks="tmux kill-session -t"
 alias tns="tmux new -s"
 
+# lazygit
+alias lg="lazygit"
+
 # Fix Postman
 alias postman="postman --disable-gpu"
 
