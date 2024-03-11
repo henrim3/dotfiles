@@ -4,7 +4,7 @@ command=loginctl suspend &> /dev/null && echo " 󰒲  "
 
 [display]
 full_text=  󰍹  
-command=autorandr --change &> /dev/null  && autorandr 2> /dev/null | awk '/(current)/ { printf(" 󰍹  %s \n", $1) }'
+command=autorandr --change &> /dev/null
 
 [sound]
 full_text= 🔇:  0% 
