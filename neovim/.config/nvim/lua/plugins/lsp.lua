@@ -16,6 +16,7 @@ vim.api.nvim_create_autocmd('LspAttach', {
         vim.keymap.set('n', '<leader>s', function()
             vim.lsp.buf.format { async = true }
         end, opts)
+            --vim.keymap.set({ 'n', 'i' }, '<c-d>', vim.lsp.diagnostic.show_line_diagnostics, opts)
     end,
 })
 
@@ -32,6 +33,7 @@ return {
         "L3MON4D3/LuaSnip",
         "saadparwaiz1/cmp_luasnip",
         "j-hui/fidget.nvim",
+        "hrsh7th/cmp-nvim-lsp-signature-help",
     },
     config = function()
         require("fidget").setup({})
@@ -78,11 +80,13 @@ return {
             mapping = cmp.mapping.preset.insert({
                 ["<C-p>"] = cmp.mapping.select_prev_item(cmp_select),
                 ["<C-n>"] = cmp.mapping.select_next_item(cmp_select),
-                ["<C-y>"] = cmp.mapping.confirm({ select = true }),
+                ["<C-e>"] = cmp.mapping.abort(cmp_select),
+                ["<tab>"] = cmp.mapping.confirm({ select = true }),
                 ["<C-S-Space>"] = cmp.mapping.complete(),
             }),
             sources = cmp.config.sources({
                 { name = "nvim_lsp" },
+                { name = 'nvim_lsp_signature_help' },
                 { name = "luasnip" },
             }, {
                 { name = "buffer" },
