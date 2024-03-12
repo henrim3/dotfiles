@@ -8,7 +8,7 @@ return {
             require("harpoon.mark").add_file()
         end)
 
-        vim.keymap.set("n", "<leader>hh", function ()
+        vim.keymap.set("n", "<leader>a", function ()
             require("harpoon.ui").toggle_quick_menu()
         end)
 
