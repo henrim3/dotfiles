@@ -78,8 +78,8 @@ return {
                 documentation = cmp.config.window.bordered(),
             },
             mapping = cmp.mapping.preset.insert({
-                ["<C-comma>"] = cmp.mapping.select_prev_item(cmp_select),
-                ["<C-semicolon>"] = cmp.mapping.select_next_item(cmp_select),
+                ["<C-p>"] = cmp.mapping.select_prev_item(cmp_select),
+                ["<C-n>"] = cmp.mapping.select_next_item(cmp_select),
                 ["<C-e>"] = cmp.mapping.abort(cmp_select),
                 ["<tab>"] = cmp.mapping.confirm({ select = true }),
                 ["<C-S-Space>"] = cmp.mapping.complete(),

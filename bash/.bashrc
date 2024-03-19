@@ -32,6 +32,9 @@ alias cp="cp -i"
 alias mv="mv -i"
 alias rm="trash -v"
 alias c="clear"
+function cdl () {
+    cd "$@" && ll
+    }
 
 # Tmux Aliases
 alias tmux="TERM=tmux-256color tmux"
