@@ -28,6 +28,7 @@ export PATH=$PATH:/home/matti/tools/flutter/bin
 # Aliases
 alias vim="nvim"
 alias ll="eza --long --header --inode --git"
+alias lla="ll -a"
 alias cp="cp -i"
 alias mv="mv -i"
 alias rm="trash -v"
