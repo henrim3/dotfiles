@@ -9,7 +9,7 @@ vim.cmd([[let g:netrw_bufsettings = 'nu']])
 vim.opt.termguicolors = true
 
 -- indentation
-vim.opt.smartindent = true
+vim.opt.smartindent = false
 vim.opt.tabstop = 4
 vim.opt.shiftwidth = 4
 vim.opt.expandtab = true
