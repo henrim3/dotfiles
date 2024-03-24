@@ -8,5 +8,6 @@ return {
         require("flutter-tools").setup()
         vim.keymap.set("n", "<leader>fe", ":FlutterEmulators<CR>")
         vim.keymap.set("n", "<leader>fs", ":FlutterRun<CR>")
+        vim.keymap.set("n", "<leader>fd", ":FlutterDevices<CR>")
     end,
 }
