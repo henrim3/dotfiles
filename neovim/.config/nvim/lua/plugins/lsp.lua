@@ -6,9 +6,9 @@ vim.api.nvim_create_autocmd('LspAttach', {
         local opts = { buffer = ev.buf }
         vim.keymap.set('n', 'gD', vim.lsp.buf.declaration, opts)
         vim.keymap.set('n', 'gd', vim.lsp.buf.definition, opts)
-        vim.keymap.set('n', 'K', vim.lsp.buf.hover, opts)
-        vim.keymap.set('n', 'gi', vim.lsp.buf.implementation, opts)
+        vim.keymap.set({ 'n', 'i' }, '<c-m>', vim.lsp.buf.hover, opts)
         vim.keymap.set({ 'n', 'i' }, '<c-n>', vim.lsp.buf.signature_help, opts)
+        vim.keymap.set('n', 'gi', vim.lsp.buf.implementation, opts)
         vim.keymap.set('n', '<leader>D', vim.lsp.buf.type_definition, opts)
         vim.keymap.set('n', '<leader>rn', vim.lsp.buf.rename, opts)
         vim.keymap.set({ 'n', 'v' }, '<leader>ca', vim.lsp.buf.code_action, opts)
@@ -16,7 +16,7 @@ vim.api.nvim_create_autocmd('LspAttach', {
         vim.keymap.set('n', '<leader>s', function()
             vim.lsp.buf.format { async = true }
         end, opts)
-        --vim.keymap.set({ 'n', 'i' }, '<c-d>', vim.lsp.diagnostic.show_line_diagnostics, opts)
+        vim.keymap.set('n', 'ge', '<cmd>lua vim.diagnostic.open_float()<cr>', opts)
     end,
 })
 
