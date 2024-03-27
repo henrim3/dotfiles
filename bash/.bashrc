@@ -25,6 +25,9 @@ export EDITOR=/usr/bin/nvim
 export VISUAL=/usr/bin/nvim
 export PATH=$PATH:/home/matti/tools/flutter/bin
 
+# shorten prompt
+PROMPT_DIRTRIM=2
+
 # Aliases
 alias vim="nvim"
 alias ll="eza --long --header --inode --git"
