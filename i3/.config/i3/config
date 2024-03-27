@@ -173,7 +173,6 @@ client.placeholder      #000000 #0c0c0c #ffffff #000000   #0c0c0c
 client.background       #ffffff
 
 # Gaps 
-smart_gaps on
 gaps inner 8
 
 # Center title
