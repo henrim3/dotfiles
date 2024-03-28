@@ -6,8 +6,8 @@ vim.api.nvim_create_autocmd('LspAttach', {
         local opts = { buffer = ev.buf }
         vim.keymap.set('n', 'gD', vim.lsp.buf.declaration, opts)
         vim.keymap.set('n', 'gd', vim.lsp.buf.definition, opts)
-        vim.keymap.set({ 'n', 'i' }, '<c-m>', vim.lsp.buf.hover, opts)
-        vim.keymap.set({ 'n', 'i' }, '<c-n>', vim.lsp.buf.signature_help, opts)
+        vim.keymap.set({ 'n', 'i' }, '<c-i>', vim.lsp.buf.hover, opts)
+        vim.keymap.set({ 'n', 'i' }, '<c-o>', vim.lsp.buf.signature_help, opts)
         vim.keymap.set('n', 'gi', vim.lsp.buf.implementation, opts)
         vim.keymap.set('n', '<leader>D', vim.lsp.buf.type_definition, opts)
         vim.keymap.set('n', '<leader>rn', vim.lsp.buf.rename, opts)
@@ -51,7 +51,7 @@ return {
                 -- stop vim global error
                 ["lua_ls"] = function()
                     local lspconfig = require("lspconfig")
-                    lspconfig.lua_ls.setup {
+                    lspconfig.lua_ls.setup {{
                         settings = {
                             Lua = {
                                 diagnostics = {
@@ -59,7 +59,13 @@ return {
                                 }
                             }
                         }
-                    }
+                    }}
+                    lspconfig.clangd.setup ({
+                        cmd = {
+                            "clangd",
+                            "--offset-encoding=utf-16",
+                        }
+                    })
                 end,
             },
         })
@@ -80,7 +86,6 @@ return {
             mapping = cmp.mapping.preset.insert({
                 ["<C-p>"] = cmp.mapping.select_prev_item(cmp_select),
                 ["<C-n>"] = cmp.mapping.select_next_item(cmp_select),
-                ["<C-e>"] = cmp.mapping.abort(cmp_select),
                 ["<tab>"] = cmp.mapping.confirm({ select = true }),
                 ["<C-S-Space>"] = cmp.mapping.complete(),
             }),
@@ -92,7 +97,6 @@ return {
                 { name = "buffer" },
             })
         })
-
         -- turn on diagnostics
         vim.diagnostic.config({
             update_in_insert = true,
@@ -106,5 +110,4 @@ return {
             },
         })
     end,
-
 }
