@@ -36,7 +36,7 @@ alias cp="cp -i"
 alias mv="mv -i"
 alias rm="trash -v"
 alias c="clear"
-function cdl () {
+function cl () {
     cd "$@" && ll
     }
 
