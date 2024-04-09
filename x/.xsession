@@ -2,6 +2,6 @@
 powertop --auto-tune
 hsetroot -fill ~/pictures/background
 setxkbmap -option caps:swapescape
-xrandr --output eDP --brightness .5
+xbacklight -set 40
 picom -b
 
