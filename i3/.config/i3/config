@@ -114,6 +114,8 @@ bindsym $mod+Shift+plus move container to workspace 12
 # move container to monitor
 bindsym $mod+Shift+greater move workspace to output right
 bindsym $mod+Shift+less move workspace to output left
+bindsym $mod+Shift+m move workspace to output down
+bindsym $mod+Shift+question move workspace to output up
 
 # restart i3 inplace (preserves your layout/session, can be used to upgrade i3)
 bindsym $mod+Shift+r restart
