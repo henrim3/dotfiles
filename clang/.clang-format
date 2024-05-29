@@ -1,0 +1,9 @@
+BasedOnStyle: Google
+IndentWidth: 2
+AccessModifierOffset: -4
+# AllowShortBlocksOnSingleLine: Empty
+AllowShortFunctionsOnASingleLine: Empty
+
+SpacesInParens: Custom
+SpacesInParensOptions:
+  Other: true
