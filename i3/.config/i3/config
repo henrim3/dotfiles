@@ -55,7 +55,7 @@ bindsym $mod+Shift+k move up
 bindsym $mod+Shift+l move right
 
 # split in horizontal orientation
-bindsym $mod+slash split h
+bindsym $mod+backslash split h
 
 # split in vertical orientation
 bindsym $mod+v split v
@@ -116,6 +116,12 @@ bindsym $mod+Shift+greater move workspace to output right
 bindsym $mod+Shift+less move workspace to output left
 bindsym $mod+Shift+m move workspace to output down
 bindsym $mod+Shift+question move workspace to output up
+
+# focus monitor
+bindsym $mod+period focus output right
+bindsym $mod+comma focus output left
+bindsym $mod+m focus output down
+bindsym $mod+slash focus output up
 
 # restart i3 inplace (preserves your layout/session, can be used to upgrade i3)
 bindsym $mod+Shift+r restart
