@@ -23,7 +23,7 @@ xset -b
 # Environment Variables
 export EDITOR=/usr/bin/nvim
 export VISUAL=/usr/bin/nvim
-export PATH=$PATH:/home/matti/tools/flutter/bin
+export PATH=$PATH:/home/matti/tools/flutter/bin:/home/matti/.local/bin
 export CHROME_EXECUTABLE=/usr/bin/google-chrome-stable
 
 # shorten prompt
