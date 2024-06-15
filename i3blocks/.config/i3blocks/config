@@ -6,6 +6,10 @@ command=loginctl suspend &> /dev/null && echo " 󰒲  "
 full_text=  󰍹  
 command=autorandr --change &> /dev/null
 
+[keyboard]
+full_text=    
+command=setxkbmap -option caps:swapescape
+
 [sound]
 full_text= 🔇:  0% 
 command=~/.config/i3blocks/sound/sound_info.sh
