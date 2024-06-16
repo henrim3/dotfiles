@@ -8,7 +8,7 @@ command=autorandr --change &> /dev/null
 
 [keyboard]
 full_text=    
-command=setxkbmap -option caps:swapescape
+command=setxkbmap -option caps:swapescape && xset r rate 350 43
 
 [sound]
 full_text= 🔇:  0% 
