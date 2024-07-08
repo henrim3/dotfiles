@@ -2,6 +2,10 @@
 full_text=  󰒲  
 command=loginctl suspend &> /dev/null && echo " 󰒲  "
 
+[lock]
+full_text=    
+command=i3lock -c 000000
+
 [display]
 full_text=  󰍹  
 command=autorandr --change &> /dev/null
@@ -38,5 +42,5 @@ color=#9CC4B2
 
 [time]
 command=date +" %a, %d %b - %I:%M %p "
-interval=30
+interval=5
 color=#F5F3BB
