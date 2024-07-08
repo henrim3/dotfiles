@@ -1,4 +1,3 @@
-# slstatus &
 powertop --auto-tune
 hsetroot -fill ~/pictures/background
 setxkbmap -option caps:swapescape
