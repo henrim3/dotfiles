@@ -22,3 +22,6 @@ vim.api.nvim_create_autocmd({ "BufEnter", "BufWinEnter" }, {
         vim.wo.relativenumber = true
     end
 })
+
+-- ruler (see virtcolumn plugin)
+vim.opt.colorcolumn = "80"
