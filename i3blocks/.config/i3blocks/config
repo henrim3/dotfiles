@@ -1,6 +1,6 @@
 [sleep]
 full_text=  󰒲  
-command=loginctl suspend &> /dev/null && echo " 󰒲  "
+command=i3lock -c 000000 && loginctl suspend &> /dev/null && echo " 󰒲  "
 
 [lock]
 full_text=    
