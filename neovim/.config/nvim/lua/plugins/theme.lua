@@ -1,5 +1,17 @@
+-- return {
+--     "drewtempelmeyer/palenight.vim",
+--     lazy = false,
+-- }
+
+-- return {
+--     "rebelot/kanagawa.nvim",
+--     lazy = false,
+-- }
+
 return {
-    -- "drewtempelmeyer/palenight.vim",
-    "rebelot/kanagawa.nvim",
+    "neanias/everforest-nvim",
     lazy = false,
+    config = function ()
+        require("everforest").setup()
+    end
 }

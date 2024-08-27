@@ -25,13 +25,14 @@ export EDITOR=/usr/bin/nvim
 export VISUAL=/usr/bin/nvim
 export PATH=$PATH:/home/matti/tools/flutter/bin:/home/matti/.local/bin:$HOME/.local/share/yabridge
 export CHROME_EXECUTABLE=/usr/bin/google-chrome-stable
+IGNOREEOF=10
 
 # shorten prompt
 PROMPT_DIRTRIM=2
 
 source /usr/local/bin/git-prompt.sh
 # PS1='\u@\h \W$(__git_ps1 " (%s)") \$ '
-PS1='\[\e]133;k;start_kitty\a\]\[\e]133;A\a\]\[\e]133;k;end_kitty\a\]\[\033]0;\u@\h:\w\007\]\[\033[01;32m\]\u@\h\[\033[01;34m\] \w$(__git_ps1 " (%s)") \$\[\033[00m\] \[\e]133;k;start_suffix_kitty\a\]\[\e]2;\w\a\]\[\e]133;k;end_suffix_kitty\a\]'
+PS1='\[\e]133;k;start_kitty\a\]\[\e]133;A\a\]\[\e]133;k;end_kitty\a\]\[\033]0;\u@\h:\w\007\]\[\033[01;32m\]\u@\h\[\033[01;34m\] \w$(__git_ps1 " (%s)") \n\$\[\033[00m\] \[\e]133;k;start_suffix_kitty\a\]\[\e]2;\w\a\]\[\e]133;k;end_suffix_kitty\a\]'
 
 # Aliases
 alias vim="nvim"

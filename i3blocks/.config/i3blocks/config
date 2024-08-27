@@ -22,25 +22,25 @@ color=#DFA06E
 
 [disk]
 command=df -h / | awk '/\//{ printf(" 󰋊 %4s/%s \n", $3, $2) }'
-interval=10
+interval=2
 color=#C9E3DB
 
 [memory]
 command=free -h | awk '/Mem:/ { printf(" 󰍛 %5s/%s \n", $3, $2) }'
-interval=10
+interval=2
 color=#FEC925
 
 [network]
 command= nmcli | grep 'wlp1s0: connected' | awk '/wlp1s0:/ { printf("   %s \n", $4) } { printf(" 󰖪  \n") }'
-interval=10
+interval=2
 color=#C6E0FF
 
 [battery]
 command=~/.config/i3blocks/battery/battery_info.sh
-interval=10
+interval=2
 color=#9CC4B2
 
 [time]
 command=date +" %a, %d %b - %I:%M %p "
-interval=5
+interval=2
 color=#F5F3BB
