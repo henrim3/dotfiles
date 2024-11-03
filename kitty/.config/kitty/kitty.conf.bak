@@ -1,0 +1,16 @@
+# font
+
+font_family JetBrainsMono NFM Regular
+
+#: Increase font size
+
+
+map ctrl+equal  change_font_size all +2.0
+map ctrl+plus   change_font_size all +2.0
+map ctrl+kp_add change_font_size all +2.0
+
+
+#: Decrease font size
+
+map ctrl+minus       change_font_size all -2.0
+map ctrl+kp_subtract change_font_size all -2.0
