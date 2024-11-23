@@ -133,7 +133,7 @@ bindsym $mod+Shift+F8 move container to workspace 20:f8
 bindsym $mod+Shift+F9 move container to workspace 21:f9
 bindsym $mod+Shift+F10 move container to workspace 22:f10
 bindsym $mod+Shift+F11 move container to workspace 23:f11
-bindsym $mod+Shift+F12 move container to workspace 24f12
+bindsym $mod+Shift+F12 move container to workspace 24:f12
 
 # move container to monitor
 bindsym $mod+Shift+greater move workspace to output down
