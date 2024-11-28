@@ -51,10 +51,9 @@ return {
         lspconfig["hls"].setup {
             filetypes = { "haskell", "lhaskell", "cabal" },
         }
-
         lspconfig.pylsp.setup {}
-
         lspconfig.typos_lsp.setup {}
+        lspconfig.clangd.setup {}
 
         local cmp = require "cmp"
         local cmp_select = { behavior = cmp.SelectBehavior.Select }
