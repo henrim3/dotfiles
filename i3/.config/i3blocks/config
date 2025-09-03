@@ -1,10 +1,12 @@
 [sleep]
 full_text=  󰒲  
-command=i3lock -c 000000 && systemctl suspend &> /dev/null && echo " 󰒲  "
+command=dm-tool lock && systemctl suspend &> /dev/null && echo " 󰒲  "
+#command=i3lock -c 4d4d4d && systemctl suspend &> /dev/null && echo " 󰒲  "
 
 [lock]
 full_text=    
-command=i3lock -c 000000
+command=dm-tool lock
+#command=i3lock -c 4d4d4d
 
 [display]
 full_text=  󰍹  
@@ -31,7 +33,7 @@ interval=2
 color=#FEC925
 
 [network]
-command= nmcli | grep 'wlp1s0: connected' | awk '/wlp1s0:/ { printf("   %s \n", $4) } { printf(" 󰖪  \n") }'
+command= nmcli | grep 'wlp98s0: connected' | awk '/wlp98s0:/ { printf("   %s \n", $4) } { printf(" 󰖪  \n") }'
 interval=2
 color=#C6E0FF
 
