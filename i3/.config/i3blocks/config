@@ -10,7 +10,7 @@ command=dm-tool lock
 
 [display]
 full_text=  󰍹  
-command=autorandr --change &> /dev/null && hsetroot --cover ~/.background-image &> /dev/null
+command=autorandr --change &> /dev/null && sleep 1 && hsetroot -cover ~/.background-image &> /dev/null
 
 [keyboard]
 full_text=    
