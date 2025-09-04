@@ -23,7 +23,7 @@ xset -b
 # Environment Variables
 export EDITOR=/usr/bin/nvim
 export VISUAL=/usr/bin/nvim
-export PATH=$PATH:/home/matti/.local/bin:/usr/local/bin
+export PATH=$PATH:/home/matti/.local/bin:/usr/local/bin:/home/matti/.config/emacs/bin
 export CHROME_EXECUTABLE=/usr/bin/google-chrome-stable
 export IGNOREEOF=10
 
