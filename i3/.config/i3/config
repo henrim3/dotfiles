@@ -192,8 +192,8 @@ bindsym XF86AudioLowerVolume exec "amixer set Master -q 5%-"
 bindsym XF86AudioMute exec "amixer -q sset Master,0 toggle"
 
 # Brightness control
-bindsym XF86MonBrightnessUp exec "xbacklight -inc 5"
-bindsym XF86MonBrightnessDown exec "xbacklight -dec 5"
+bindsym XF86MonBrightnessUp exec "brightnessctl s 5%+"
+bindsym XF86MonBrightnessDown exec "brightnessctl s 5%-"
 
 # Colors
 # class                 border  backgr. text    indicator child_border
