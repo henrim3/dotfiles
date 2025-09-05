@@ -44,7 +44,7 @@
 (setq org-directory "~/org/")
 
 ;; font stuff
-(setq doom-font (font-spec :family "Hurmit Nerd Font Mono" :size 30)
+(setq doom-font (font-spec :family "Hurmit Nerd Font Mono" :size 24)
       doom-big-font (font-spec :family "Hurmit Nerd Font Mono" :size 40))
 
 ;; line wrapping
@@ -52,6 +52,15 @@
 
 (map! :leader
       :desc "Open dired" "p v" #'dired)
+
+(map! :leader
+      :desc "Format buffer" "f o" #'lsp-format-buffer)
+
+;; vim keys for windows
+(map! :n "C-h" #'evil-window-left
+      :n "C-j" #'evil-window-down
+      :n "C-k" #'evil-window-up
+      :n "C-l" #'evil-window-right)
 
 ;; Whenever you reconfigure a package, make sure to wrap your config in an
 ;; `after!' block, otherwise Doom's defaults may override your settings. E.g.
