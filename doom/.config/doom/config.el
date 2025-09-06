@@ -44,23 +44,77 @@
 (setq org-directory "~/org/")
 
 ;; font stuff
-(setq doom-font (font-spec :family "Hurmit Nerd Font Mono" :size 24)
+(setq doom-font (font-spec :family "Hurmit Nerd Font Mono" :size 28)
       doom-big-font (font-spec :family "Hurmit Nerd Font Mono" :size 40))
 
 ;; line wrapping
 (global-visual-line-mode t)
 
 (map! :leader
-      :desc "Open dired" "p v" #'dired)
+      :desc "Open dired" "p v" #'dired-jump)
 
 (map! :leader
       :desc "Format buffer" "f o" #'lsp-format-buffer)
+
+;; hover stuff
+(map! :leader
+      :desc "Describe thing at point" "k" #'lsp-describe-thing-at-point)
+
+(map! :n "K" #'lsp-ui-doc-glance)
 
 ;; vim keys for windows
 (map! :n "C-h" #'evil-window-left
       :n "C-j" #'evil-window-down
       :n "C-k" #'evil-window-up
       :n "C-l" #'evil-window-right)
+
+(map! :map magit-diff-mode-map
+      :n "C-h" #'evil-window-left
+      :n "C-j" #'evil-window-down
+      :n "C-k" #'evil-window-up
+      :n "C-l" #'evil-window-right)
+
+;; set shell to zsh
+(setq vterm-shell "/run/current-system/sw/bin/zsh")
+
+(setq +workspaces-auto-save t)
+
+;; open dired when select project
+(setq projectile-switch-project-action
+      (lambda ()
+        (dired (projectile-project-root))
+        (delete-other-windows)))
+
+(after! lsp-mode
+  (setq lsp-signature-auto-activate nil
+        lsp-eldoc-enable-hover nil
+        lsp-signature-render-documentation nil))
+
+(global-set-key (kbd "M-<backspace>") 'backward-kill-word)
+
+;; Disable automatic indentation
+(electric-indent-mode -1)
+
+(require 'multi-vterm)
+(require 'rainbow-delimiters)
+
+(add-hook 'prog-mode-hook #'rainbow-delimiters-mode)
+
+(require 'highlight-indent-guides)
+(add-hook 'prog-mode-hook 'highlight-indent-guides-mode)
+
+;; make clipboard work like vim
+(setq select-enable-clipboard nil
+      select-enable-primary nil)
+
+(after! company
+  ;; Use TAB for completion instead of RET
+  (define-key company-active-map (kbd "TAB") #'company-complete-selection)
+  (define-key company-active-map (kbd "<tab>") #'company-complete-selection)
+
+  ;; Make sure RET just inserts a newline
+  (define-key company-active-map (kbd "RET") nil)
+  (define-key company-active-map (kbd "<return>") nil))
 
 ;; Whenever you reconfigure a package, make sure to wrap your config in an
 ;; `after!' block, otherwise Doom's defaults may override your settings. E.g.
