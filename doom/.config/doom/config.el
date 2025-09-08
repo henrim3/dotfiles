@@ -33,7 +33,8 @@
 ;; available. You can either set `doom-theme' or manually load a theme with the
 ;; `load-theme' function. This is the default:
 ;; (setq doom-theme 'doom-one)
-(setq doom-theme 'doom-palenight)
+;; (setq doom-theme 'doom-palenight)
+(setq doom-theme 'doom-monokai-classic)
 
 ;; This determines the style of line numbers in effect. If set to `nil', line
 ;; numbers are disabled. For relative line numbers, set this to `relative'.
@@ -44,7 +45,7 @@
 (setq org-directory "~/org/")
 
 ;; font stuff
-(setq doom-font (font-spec :family "Hurmit Nerd Font Mono" :size 28)
+(setq doom-font (font-spec :family "Hurmit Nerd Font Mono" :size 26)
       doom-big-font (font-spec :family "Hurmit Nerd Font Mono" :size 40))
 
 ;; line wrapping
@@ -74,6 +75,24 @@
       :n "C-k" #'evil-window-up
       :n "C-l" #'evil-window-right)
 
+(map! :n "C-M-=" #'evil-window-increase-width
+      :n "C-M--" #'evil-window-decrease-width)
+
+(map! :n "C-M-h"  #'+workspace/switch-left
+      :n "C-M-l" #'+workspace/switch-right)
+
+(map! :leader
+      :desc "Search project (regexp)"
+      "SPC" #'+default/search-project)
+
+(map! :leader
+      :desc "Open multi vterm"
+      "m t" #'multi-vterm)
+
+(map! :leader
+      :desc "Rename multi vterm buffer"
+      "m r" #'multi-vterm-rename-buffer)
+
 ;; set shell to zsh
 (setq vterm-shell "/run/current-system/sw/bin/zsh")
 
@@ -90,6 +109,9 @@
         lsp-eldoc-enable-hover nil
         lsp-signature-render-documentation nil))
 
+;; Show only file name, not the full path
+(setq doom-modeline-buffer-file-name-style 'buffer-name)
+
 (global-set-key (kbd "M-<backspace>") 'backward-kill-word)
 
 ;; Disable automatic indentation
@@ -104,8 +126,8 @@
 (add-hook 'prog-mode-hook 'highlight-indent-guides-mode)
 
 ;; make clipboard work like vim
-(setq select-enable-clipboard nil
-      select-enable-primary nil)
+;; (setq select-enable-clipboard nil
+;;       select-enable-primary nil)
 
 (after! company
   ;; Use TAB for completion instead of RET
@@ -115,6 +137,11 @@
   ;; Make sure RET just inserts a newline
   (define-key company-active-map (kbd "RET") nil)
   (define-key company-active-map (kbd "<return>") nil))
+
+;; vim s key
+(after! evil-snipe
+  (evil-snipe-mode -1))
+(remove-hook 'doom-first-input-hook #'evil-snipe-mode)
 
 ;; Whenever you reconfigure a package, make sure to wrap your config in an
 ;; `after!' block, otherwise Doom's defaults may override your settings. E.g.
