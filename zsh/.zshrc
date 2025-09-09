@@ -115,6 +115,8 @@ export VISUAL=/usr/bin/nvim
 export PATH=$PATH:/home/matti/.local/bin:/usr/local/bin:/home/matti/.config/emacs/bin
 export CHROME_EXECUTABLE=/usr/bin/google-chrome-stable
 export IGNOREEOF=10
+export ALTERNATE_EDITOR=""
+# export ANDROID_HOME="/run/current-system/sw/bin/adb"
 
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
@@ -147,6 +149,16 @@ function cla () {
 alias p="pwd"
 function mkcd () {
     mkdir "$@" && cd "$@"
+}
+
+# Add this to ~/.zshrc
+e() {
+  # If arguments are given, open them; otherwise just start a new frame
+  if [[ $# -gt 0 ]]; then
+    emacsclient -a "" -c "$@" & disown
+  else
+    emacsclient -a "" -c & disown
+  fi
 }
 
 # set emacs keybindings

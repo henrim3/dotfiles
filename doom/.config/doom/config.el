@@ -93,6 +93,14 @@
       :desc "Rename multi vterm buffer"
       "m r" #'multi-vterm-rename-buffer)
 
+(map! :leader
+      :desc "Next multi-vterm"
+      "m n" #'multi-vterm-next)
+
+(map! :leader
+      :desc "Previous multi-vterm"
+      "m p" #'multi-vterm-prev)
+
 ;; set shell to zsh
 (setq vterm-shell "/run/current-system/sw/bin/zsh")
 
@@ -122,6 +130,10 @@
 
 (add-hook 'prog-mode-hook #'rainbow-delimiters-mode)
 
+;; ruler col 80
+(add-hook 'prog-mode-hook #'display-fill-column-indicator-mode)
+(setopt display-fill-column-indicator-column 80)
+
 (require 'highlight-indent-guides)
 (add-hook 'prog-mode-hook 'highlight-indent-guides-mode)
 
@@ -142,6 +154,9 @@
 (after! evil-snipe
   (evil-snipe-mode -1))
 (remove-hook 'doom-first-input-hook #'evil-snipe-mode)
+
+(after! dart-mode
+  (setq dart-indent-level 2))
 
 ;; Whenever you reconfigure a package, make sure to wrap your config in an
 ;; `after!' block, otherwise Doom's defaults may override your settings. E.g.
