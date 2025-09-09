@@ -48,6 +48,9 @@
 (setq doom-font (font-spec :family "Hurmit Nerd Font Mono" :size 26)
       doom-big-font (font-spec :family "Hurmit Nerd Font Mono" :size 40))
 
+;; save bookmarks after each change
+(setq bookmark-save-flag 1)
+
 ;; line wrapping
 (global-visual-line-mode t)
 
@@ -78,8 +81,13 @@
 (map! :n "C-M-=" #'evil-window-increase-width
       :n "C-M--" #'evil-window-decrease-width)
 
+;; switch workspaces with ctrl + alt + vim key
 (map! :n "C-M-h"  #'+workspace/switch-left
       :n "C-M-l" #'+workspace/switch-right)
+
+;; move workspace left/right
+(map! "<S-left>" #'+workspace/swap-left)
+(map! "<S-right>" #'+workspace/swap-right)
 
 (map! :leader
       :desc "Search project (regexp)"
