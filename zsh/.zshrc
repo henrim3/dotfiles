@@ -112,11 +112,19 @@ xset -b
 # Environment Variables
 export EDITOR=/usr/bin/nvim
 export VISUAL=/usr/bin/nvim
-export PATH=$PATH:/home/matti/.local/bin:/usr/local/bin:/home/matti/.config/emacs/bin
 export CHROME_EXECUTABLE=/usr/bin/google-chrome-stable
 export IGNOREEOF=10
 export ALTERNATE_EDITOR=""
-# export ANDROID_HOME="/run/current-system/sw/bin/adb"
+
+export PATH=$PATH:/home/matti/.local/bin:/usr/local/bin:/home/matti/.config/emacs/bin
+
+export ANDROID_HOME=$HOME/Android/Sdk
+export PATH=$PATH:$ANDROID_HOME/platform-tools
+export PATH=$PATH:$ANDROID_HOME/tools
+export PATH=$PATH:$ANDROID_HOME/tools/bin
+export PATH=$PATH:$ANDROID_HOME/emulator
+
+export PATH="$HOME/dev_tools/flutter/bin:$PATH"
 
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm

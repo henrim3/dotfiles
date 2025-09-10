@@ -45,8 +45,8 @@
 (setq org-directory "~/org/")
 
 ;; font stuff
-(setq doom-font (font-spec :family "Hurmit Nerd Font Mono" :size 26)
-      doom-big-font (font-spec :family "Hurmit Nerd Font Mono" :size 40))
+(setq doom-font (font-spec :family "Hurmit Nerd Font Mono" :size 18)
+      doom-big-font (font-spec :family "Hurmit Nerd Font Mono" :size 30))
 
 ;; save bookmarks after each change
 (setq bookmark-save-flag 1)
@@ -110,7 +110,7 @@
       "m p" #'multi-vterm-prev)
 
 ;; set shell to zsh
-(setq vterm-shell "/run/current-system/sw/bin/zsh")
+(setq vterm-shell "/usr/bin/zsh")
 
 (setq +workspaces-auto-save t)
 
@@ -130,17 +130,17 @@
 
 (global-set-key (kbd "M-<backspace>") 'backward-kill-word)
 
+;; ruler col 80
+(add-hook 'prog-mode-hook #'display-fill-column-indicator-mode)
+(setopt display-fill-column-indicator-column 80)
+
 ;; Disable automatic indentation
 (electric-indent-mode -1)
 
 (require 'multi-vterm)
 (require 'rainbow-delimiters)
 
-(add-hook 'prog-mode-hook #'rainbow-delimiters-mode)
-
-;; ruler col 80
-(add-hook 'prog-mode-hook #'display-fill-column-indicator-mode)
-(setopt display-fill-column-indicator-column 80)
+(Add-hook 'prog-mode-hook #'rainbow-delimiters-mode)
 
 (require 'highlight-indent-guides)
 (add-hook 'prog-mode-hook 'highlight-indent-guides-mode)
