@@ -91,7 +91,7 @@
 
 (map! :leader
       :desc "Search project (regexp)"
-      "SPC" #'+default/search-project)
+      "f g" #'+default/search-project)
 
 (map! :leader
       :desc "Open multi vterm"
