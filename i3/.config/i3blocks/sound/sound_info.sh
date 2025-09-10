@@ -4,8 +4,12 @@ VOLUME_MUTE="󰖁"
 VOLUME_LOW="󰕿"
 VOLUME_MID="󰖀"
 VOLUME_HIGH="󰕾"
-SOUND_LEVEL=$(amixer -M get Master | awk -F"[][]" '/%/ { print $2 }' | awk -F"%" 'BEGIN{tot=0; i=0} {i++; tot+=$1} END{printf("%s\n", tot/i) }')
-MUTED=$(amixer get Master | awk ' /%/{print ($NF=="[off]" ? 1 : 0); exit;}')
+
+SOUND_LEVEL=$(pactl get-sink-volume @DEFAULT_SINK@ | awk '/%/ { print $5 }' | awk -F"%" 'BEGIN{tot=0; i=0} {i++; tot+=$1} END{printf("%s\n", tot/i) }')
+MUTED=$(pactl get-sink-mute @DEFAULT_SINK@ | awk '{print ($2=="yes" ? 1 : 0)}')
+
+# SOUND_LEVEL=$(amixer -M get Master | awk -F"[][]" '/%/ { print $2 }' | awk -F"%" 'BEGIN{tot=0; i=0} {i++; tot+=$1} END{printf("%s\n", tot/i) }')
+# MUTED=$(amixer get Master | awk ' /%/{print ($NF=="[off]" ? 1 : 0); exit;}')
 
 ICON=$VOLUME_MUTE
 if [ "$MUTED" = "1" ]

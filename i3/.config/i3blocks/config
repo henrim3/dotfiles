@@ -1,6 +1,6 @@
 [sleep]
 full_text=  󰒲  
-command=dm-tool lock && systemctl suspend &> /dev/null && echo " 󰒲  "
+command=dm-tool lock && loginctl suspend &> /dev/null && echo " 󰒲  "
 #command=i3lock -c 4d4d4d && systemctl suspend &> /dev/null && echo " 󰒲  "
 
 [lock]

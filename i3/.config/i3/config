@@ -187,9 +187,12 @@ bar {
 }
 
 # Volume control
-bindsym XF86AudioRaiseVolume exec "amixer set Master -q 5%+"
-bindsym XF86AudioLowerVolume exec "amixer set Master -q 5%-"
-bindsym XF86AudioMute exec "amixer -q sset Master,0 toggle"
+# bindsym XF86AudioRaiseVolume exec "amixer set Master -q 5%+"
+# bindsym XF86AudioLowerVolume exec "amixer set Master -q 5%-"
+# bindsym XF86AudioMute exec "amixer -q sset Master,0 toggle"
+bindsym XF86AudioRaiseVolume exec "pactl set-sink-volume @DEFAULT_SINK@ +5%"
+bindsym XF86AudioLowerVolume exec "pactl set-sink-volume @DEFAULT_SINK@ -5%"
+bindsym XF86AudioMute exec "pactl set-sink-mute @DEFAULT_SINK@ toggle"
 
 # Brightness control
 bindsym XF86MonBrightnessUp exec "brightnessctl s 5%+"
