@@ -136,10 +136,10 @@ bindsym $mod+Shift+F11 move container to workspace 23:f11
 bindsym $mod+Shift+F12 move container to workspace 24:f12
 
 # move container to monitor
-bindsym $mod+Shift+greater move workspace to output down
-bindsym $mod+Shift+less move workspace to output up
+bindsym $mod+Shift+comma move workspace to output down
+bindsym $mod+Shift+period move workspace to output up
 bindsym $mod+Shift+m move workspace to output left
-bindsym $mod+Shift+question move workspace to output right
+bindsym $mod+Shift+slash move workspace to output right
 
 # focus monitor
 bindsym $mod+comma focus output down
