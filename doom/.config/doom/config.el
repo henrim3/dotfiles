@@ -128,6 +128,9 @@
 ;; Show only file name, not the full path
 (setq doom-modeline-buffer-file-name-style 'buffer-name)
 
+(setq lsp-dart-sdk-dir "/home/matti/dev/flutter/bin/cache/dart-sdk")
+(setq lsp-dart-flutter-sdk-dir "/home/matti/dev/flutter/bin")
+
 (global-set-key (kbd "M-<backspace>") 'backward-kill-word)
 
 ;; ruler col 80
@@ -137,17 +140,18 @@
 ;; Disable automatic indentation
 (electric-indent-mode -1)
 
+;; packages
 (require 'multi-vterm)
 (require 'rainbow-delimiters)
 
-(Add-hook 'prog-mode-hook #'rainbow-delimiters-mode)
+(add-hook 'prog-mode-hook #'rainbow-delimiters-mode)
 
 (require 'highlight-indent-guides)
 (add-hook 'prog-mode-hook 'highlight-indent-guides-mode)
 
-;; make clipboard work like vim
-;; (setq select-enable-clipboard nil
-;;       select-enable-primary nil)
+make clipboard work like vim
+(setq select-enable-clipboard nil
+      select-enable-primary nil)
 
 (after! company
   ;; Use TAB for completion instead of RET
