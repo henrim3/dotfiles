@@ -126,6 +126,8 @@ export PATH=$PATH:$ANDROID_HOME/emulator
 
 export PATH="$HOME/dev/flutter/bin:$PATH"
 
+export FLUTTER_ROOT=$HOME/dev/flutter
+
 # Aliases
 alias vim="nvim"
 alias ll="eza --long --header --inode --git"

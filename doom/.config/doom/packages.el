@@ -49,4 +49,3 @@
 ;; (unpin! t)
 
 (package! tldr)
-(package! lsp-dart)

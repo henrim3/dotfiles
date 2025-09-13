@@ -45,7 +45,7 @@
 (setq org-directory "~/org/")
 
 ;; font stuff
-(setq doom-font (font-spec :family "Hurmit Nerd Font Mono" :size 18)
+(setq doom-font (font-spec :family "Hurmit Nerd Font Mono" :size 16)
       doom-big-font (font-spec :family "Hurmit Nerd Font Mono" :size 30))
 
 ;; save bookmarks after each change
@@ -129,7 +129,11 @@
 (setq doom-modeline-buffer-file-name-style 'buffer-name)
 
 (setq lsp-dart-sdk-dir "/home/matti/dev/flutter/bin/cache/dart-sdk")
-(setq lsp-dart-flutter-sdk-dir "/home/matti/dev/flutter/bin")
+;; (setq lsp-dart-flutter-sdk-dir "/home/matti/dev/flutter")
+
+(with-eval-after-load 'projectile
+  (add-to-list 'projectile-project-root-files-bottom-up "pubspec.yaml")
+  (add-to-list 'projectile-project-root-files-bottom-up "BUILD"))
 
 (global-set-key (kbd "M-<backspace>") 'backward-kill-word)
 
@@ -138,7 +142,7 @@
 (setopt display-fill-column-indicator-column 80)
 
 ;; Disable automatic indentation
-(electric-indent-mode -1)
+;; (electric-indent-mode -1)
 
 ;; packages
 (require 'multi-vterm)
@@ -146,12 +150,12 @@
 
 (add-hook 'prog-mode-hook #'rainbow-delimiters-mode)
 
-(require 'highlight-indent-guides)
-(add-hook 'prog-mode-hook 'highlight-indent-guides-mode)
+;; (require 'highlight-indent-guides)
+;; (add-hook 'prog-mode-hook #'highlight-indent-guides-mode)
 
-make clipboard work like vim
-(setq select-enable-clipboard nil
-      select-enable-primary nil)
+;; make clipboard work like vim
+;; (setq select-enable-clipboard nil
+;;       select-enable-primary nil)
 
 (after! company
   ;; Use TAB for completion instead of RET
