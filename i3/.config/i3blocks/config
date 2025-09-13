@@ -8,13 +8,13 @@ full_text=  
 command=dm-tool lock
 #command=i3lock -c 4d4d4d
 
-[display]
-full_text=  󰍹  
-command=autorandr --change &> /dev/null && sleep 1 && hsetroot -cover ~/.background-image &> /dev/null && echo " 󰍹  "
+# [display]
+# full_text=  󰍹  
+# command=autorandr --change &> /dev/null && sleep 1 && hsetroot -cover ~/.background-image &> /dev/null && echo " 󰍹  "
 
-[keyboard]
-full_text=    
-command=setxkbmap -option caps:swapescape && xset r rate 350 43
+# [keyboard]
+# full_text=    
+# command=setxkbmap -option caps:swapescape && xset r rate 350 43
 
 [sound]
 full_text= 🔇:  0% 
