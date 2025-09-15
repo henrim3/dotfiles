@@ -51,6 +51,8 @@
 ;; save bookmarks after each change
 (setq bookmark-save-flag 1)
 
+(setq scroll-bar-mode 'right)
+
 ;; line wrapping
 (global-visual-line-mode t)
 
