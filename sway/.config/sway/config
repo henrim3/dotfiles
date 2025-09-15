@@ -218,6 +218,7 @@ title_align center
 output eDP-1 {
     scale 1.5
     pos 0 0
+    mode 2880x1800@60.001Hz
 }
 
 output HDMI-A-1 pos 1920 0
@@ -230,4 +231,8 @@ input * {
 input "type:keyboard" {
       repeat_delay 300
       repeat_rate 60
+}
+
+input "type:touchpad" {
+    scroll_factor 0.7
 }
