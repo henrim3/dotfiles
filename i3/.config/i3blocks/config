@@ -1,3 +1,7 @@
+[screenshot]
+full_text=  󰍹  
+command=slurp | grim -g - - | wl-copy &> /dev/null
+
 [sleep]
 full_text=  󰒲  
 command=dm-tool lock && loginctl suspend &> /dev/null && echo " 󰒲  "
