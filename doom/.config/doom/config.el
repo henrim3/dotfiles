@@ -33,8 +33,8 @@
 ;; available. You can either set `doom-theme' or manually load a theme with the
 ;; `load-theme' function. This is the default:
 ;; (setq doom-theme 'doom-one)
-;; (setq doom-theme 'doom-palenight)
-(setq doom-theme 'doom-monokai-classic)
+(setq doom-theme 'doom-palenight)
+;; (setq doom-theme 'doom-monokai-classic)
 
 ;; This determines the style of line numbers in effect. If set to `nil', line
 ;; numbers are disabled. For relative line numbers, set this to `relative'.
@@ -103,13 +103,14 @@
       :desc "Rename multi vterm buffer"
       "m r" #'multi-vterm-rename-buffer)
 
-(map! :leader
-      :desc "Next multi-vterm"
-      "m n" #'multi-vterm-next)
+(after! vterm
+  ;; Prevent vterm from hijacking C-M-m
+  (add-to-list 'vterm-keymap-exceptions "C-M-m")
 
-(map! :leader
-      :desc "Previous multi-vterm"
-      "m p" #'multi-vterm-prev)
+  ;; Bind inside vterm
+  (map! :map vterm-mode-map
+        "C-M-/" #'multi-vterm-next
+        "C-M-m" #'multi-vterm-prev))
 
 ;; set shell to zsh
 (setq vterm-shell "/usr/bin/zsh")
