@@ -112,6 +112,8 @@
         "C-M-/" #'multi-vterm-next
         "C-M-m" #'multi-vterm-prev))
 
+(map! :n "C-S-j" #'+vterm/toggle)
+
 ;; set shell to zsh
 (setq vterm-shell "/usr/bin/zsh")
 

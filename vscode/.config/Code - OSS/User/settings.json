@@ -1,0 +1,135 @@
+{
+  "workbench.iconTheme": "vscode-icons",
+  "vsicons.dontShowNewVersionMessage": true,
+  "editor.acceptSuggestionOnEnter": "off",
+  "zenMode.hideLineNumbers": false,
+  "zenMode.silentNotifications": false,
+  "editor.lineNumbers": "relative",
+  "omnisharp.useModernNet": false,
+  "[dart]": {
+    "editor.formatOnSave": true,
+    "editor.formatOnType": true,
+    "editor.selectionHighlight": false,
+    "editor.suggest.snippetsPreventQuickSuggestions": false,
+    "editor.suggestSelection": "first",
+    "editor.tabCompletion": "onlySnippets",
+    "editor.wordBasedSuggestions": "off"
+  },
+  "[c]": {
+    "editor.tabSize": 2
+  },
+  "redhat.telemetry.enabled": true,
+  "editor.cursorBlinking": "solid",
+  "explorer.compactFolders": false,
+  "editor.guides.bracketPairs": "active",
+  "dart.debugExternalPackageLibraries": false,
+  "dart.debugSdkLibraries": false,
+  "editor.accessibilitySupport": "off",
+  "editor.rulers": [80],
+  "notebook.lineNumbers": "on",
+  "workbench.editorAssociations": {
+    "*.pdf": "pdf.preview"
+  },
+  "C_Cpp.default.compilerPath": "C:\\msys64\\mingw64\\bin\\gcc.exe",
+  "liveServer.settings.donotVerifyTags": true,
+  "[html]": {
+    "editor.defaultFormatter": "vscode.html-language-features"
+  },
+  "[latex]": {
+    "editor.formatOnPaste": false,
+    "editor.suggestSelection": "recentlyUsedByPrefix"
+  },
+  "latex.linter.delay": 5000,
+  "[shellscript]": {
+    "editor.defaultFormatter": "foxundermoon.shell-format"
+  },
+  "[jsonc]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "extensions.experimental.affinity": {
+    "asvetliakov.vscode-neovim": 1
+  },
+  "[javascript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "window.commandCenter": false,
+  "[plaintext]": {
+    "editor.unicodeHighlight.ambiguousCharacters": false,
+    "editor.unicodeHighlight.invisibleCharacters": false,
+    "editor.wordWrap": "on",
+    "editor.wordWrapColumn": 110,
+    "editor.rulers": []
+  },
+  "files.associations": {
+    "*.module": "php"
+  },
+  "keyboard.dispatch": "keyCode",
+  "[json]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "editor.wordWrap": "on",
+  "powermode.enabled": true,
+  "powermode.shake.enabled": false,
+  "[typescriptreact]": {
+    "editor.defaultFormatter": "vscode.typescript-language-features"
+  },
+  "workbench.tree.indent": 13,
+  "workbench.tree.renderIndentGuides": "always",
+  "haskell.manageHLS": "GHCup",
+  "prolog.executablePath": "/usr/local/bin/swipl",
+  "dart.flutterSdkPath": "/home/matti/dev/flutter",
+  "git.autofetch": true,
+  "editor.autoClosingBrackets": "never",
+  "editor.autoClosingQuotes": "never",
+  "editor.autoIndent": "keep",
+  "vscode-neovim.neovimClean": true,
+  "editor.inlayHints.enabled": "off",
+  "cmake.showOptionsMovedNotification": false,
+  "cmake.pinnedCommands": [
+    "workbench.action.tasks.configureTaskRunner",
+    "workbench.action.tasks.runTask"
+  ],
+  // "workbench.colorCustomizations": {
+  //   "editorLineNumber.foreground": "#ffff"
+  // },
+  // fix cmake include error squiggle
+  "C_Cpp.intelliSenseEngine": "Tag Parser",
+  "diffEditor.ignoreTrimWhitespace": false,
+  "files.exclude": {
+    "**/.git": false
+  },
+  "coverage-gutters.showLineCoverage": true,
+  "C_Cpp.clang_format_fallbackStyle": "{   IndentWidth: 2,   AccessModifierOffset: -4,   AllowShortFunctionsOnASingleLine: Empty,   AllowShortIfStatementsOnASingleLine: false,   AllowShortLoopsOnASingleLine: false,   SpacesInParens: Custom,   SpacesInParensOptions: { InConditionalStatements: true, Other: true },   PointerAlignment: Left, }",
+  "yaml.schemas": {
+    "file:///c%3A/Users/kangk/.vscode/extensions/atlassian.atlascode-3.8.3/resources/schemas/pipelines-schema.json": "bitbucket-pipelines.yml"
+  },
+  "zenMode.centerLayout": false,
+  "zenMode.hideStatusBar": false,
+  "vscode_custom_css.imports": [
+    // "file:///C:/Users/kangk/custom-vscode/custom-vscode.css"
+  ],
+  "editor.minimap.showSlider": "always",
+  "editor.minimap.renderCharacters": false,
+  "editor.minimap.enabled": false,
+
+  // font stuff
+  "editor.fontFamily": "Hurmit Nerd Font Mono",
+  "terminal.integrated.fontFamily": "Hurmit Nerd Font Mono",
+  "editor.fontLigatures": true,
+  "terminal.integrated.fontLigatures.enabled": true,
+
+  "window.zoomLevel": -1,
+  "editor.cursorStyle": "underline",
+  "zenMode.restore": false,
+  "editor.stickyScroll.maxLineCount": 8,
+  "workbench.sideBar.location": "right",
+  "terminal.integrated.fontSize": 15,
+  "editor.stickyScroll.defaultModel": "foldingProviderModel",
+  "git.enableSmartCommit": true,
+  "workbench.colorTheme": "One Monokai",
+  "dart.flutterTestAdditionalArgs": ["--coverage"],
+  "dart.runPubGetOnPubspecChanges": "never",
+  "window.openFilesInNewWindow": "on",
+  "editor.formatOnSave": true,
+  "python.languageServer": "Pylance"
+}
