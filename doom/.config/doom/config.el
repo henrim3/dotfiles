@@ -179,8 +179,8 @@
 (after! dart-mode
   (setq dart-indent-level 2))
 
-;; better mouse
-(setq mouse-wheel-scroll-amount '(1 ((shift) . 1) ((control) . nil)))
+;; better scroll
+(setq mouse-wheel-scroll-amount '(3 ((shift) . 3) ((control) . nil)))
 (setq mouse-wheel-progressive-speed nil)
 
 ;; Whenever you reconfigure a package, make sure to wrap your config in an

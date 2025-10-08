@@ -234,5 +234,5 @@ input "type:keyboard" {
 }
 
 input "type:touchpad" {
-    scroll_factor 0.7
+    scroll_factor 0.4
 }
