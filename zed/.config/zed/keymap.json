@@ -7,16 +7,6 @@
 // from the command palette.
 [
   {
-    "context": "Editor",
-    "bindings": {
-      "ctrl-shift-tab": "pane::ActivatePreviousItem",
-      "ctrl-tab": "pane::ActivateNextItem"
-    }
-  },
-  {
-    "context": "Terminal"
-  },
-  {
     "bindings": {
       "ctrl-h": "workspace::ActivatePaneLeft",
       "ctrl-j": "workspace::ActivatePaneDown",
@@ -28,7 +18,14 @@
       "ctrl-e": "project_panel::ToggleFocus",
       "ctrl-i": "outline_panel::ToggleFocus",
       "ctrl-g": "git_panel::ToggleFocus",
-      "ctrl-shift-e": "workspace::ToggleRightDock"
+      "ctrl-shift-e": "workspace::ToggleRightDock",
+      "ctrl-'": "terminal_panel::ToggleFocus"
+    }
+  },
+  {
+    "context": "Editor",
+    "bindings": {
+      "alt-backspace": "editor::DeleteToPreviousWordStart"
     }
   }
 ]
