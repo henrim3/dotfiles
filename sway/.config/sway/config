@@ -239,3 +239,5 @@ input "type:touchpad" {
     natural_scroll enable
     scroll_factor 0.4
 }
+
+exec gammastep
