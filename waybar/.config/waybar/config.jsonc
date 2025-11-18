@@ -16,6 +16,7 @@
     //     "sway/window"
     // ],
     "modules-right": [
+        "custom/screenshot",
         "mpd",
         "pulseaudio",
         "network",
@@ -28,7 +29,8 @@
         "battery",
         "battery#bat2",
         "clock",
-        "tray"
+        "tray",
+        "custom/power"
     ],
     // Modules configuration
     "sway/workspaces": {
@@ -211,10 +213,15 @@
 		"menu": "on-click",
 		"menu-file": "$HOME/.config/waybar/power_menu.xml", // Menu file in resources folder
 		"menu-actions": {
-			"shutdown": "systemctl poweroff",
-			"reboot": "systemctl reboot",
+            "lock": "dm-tool lock",
 			"suspend": "systemctl suspend",
-			"hibernate": "systemctl hibernate"
+			"shutdown": "poweroff",
+			"reboot": "reboot"
 		}
+    },
+    "custom/screenshot": {
+        "format": "󰍹",
+        "on-click": "slurp | grim -g - - | wl-copy &> /dev/null",
+        "interval": 0
     }
 }

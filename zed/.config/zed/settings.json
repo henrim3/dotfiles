@@ -7,6 +7,9 @@
 // custom settings, run `zed: open default settings` from the
 // command palette (cmd-shift-p / ctrl-shift-p)
 {
+  "features": {
+    "edit_prediction_provider": "copilot"
+  },
   "outline_panel": {
     "dock": "right"
   },
@@ -31,5 +34,7 @@
   },
   "relative_line_numbers": "enabled",
   "cursor_blink": false,
-  "cursor_shape": "underline"
+  "cursor_shape": "underline",
+  "buffer_font_family": "Hurmit Nerd Font Mono",
+  "ui_font_family": "Hurmit Nerd Font Mono"
 }
