@@ -27,7 +27,7 @@
   "theme": {
     "mode": "dark",
     "light": "Gruvbox Light",
-    "dark": "True Dark"
+    "dark": "Palenight Theme"
   },
   "relative_line_numbers": "enabled",
   "cursor_blink": false,
