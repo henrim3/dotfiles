@@ -15,7 +15,6 @@
       "ctrl-shift-j": "workspace::ToggleBottomDock",
       "ctrl-shift-tab": "pane::ActivatePreviousItem",
       "ctrl-tab": "pane::ActivateNextItem",
-      "ctrl-e": "project_panel::ToggleFocus",
       "ctrl-i": "outline_panel::ToggleFocus",
       "ctrl-g": "git_panel::ToggleFocus",
       "ctrl-shift-e": "workspace::ToggleRightDock",
@@ -27,6 +26,18 @@
     "context": "Editor",
     "bindings": {
       "alt-backspace": "editor::DeleteToPreviousWordStart"
+    }
+  },
+  {
+    "context": "(Editor && edit_prediction)",
+    "bindings": {
+      "alt-n": "editor::AcceptEditPrediction"
+    }
+  },
+  {
+    "context": "(Editor && edit_prediction_conflict)",
+    "bindings": {
+      "alt-n": "editor::AcceptEditPrediction"
     }
   }
 ]
