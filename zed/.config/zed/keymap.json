@@ -19,7 +19,8 @@
       "ctrl-g": "git_panel::ToggleFocus",
       "ctrl-shift-e": "workspace::ToggleRightDock",
       "ctrl-'": "terminal_panel::ToggleFocus",
-      "ctrl-w": "pane::CloseActiveItem"
+      "ctrl-w": "pane::CloseActiveItem",
+      "ctrl-q": "project_panel::ToggleFocus"
     }
   },
   {

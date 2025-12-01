@@ -11,7 +11,7 @@
     "mode": "subtle"
   },
   "features": {
-    "edit_prediction_provider": "copilot"
+    "edit_prediction_provider": "zed"
   },
   "outline_panel": {
     "dock": "right"
