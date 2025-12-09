@@ -20,6 +20,7 @@
     "dock": "right"
   },
   "project_panel": {
+    "auto_fold_dirs": false,
     "dock": "right"
   },
   "telemetry": {
