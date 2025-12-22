@@ -214,7 +214,7 @@
 		"menu-file": "$HOME/.config/waybar/power_menu.xml", // Menu file in resources folder
 		"menu-actions": {
             "lock": "dm-tool lock",
-			"suspend": "systemctl suspend",
+			"suspend": "dm-tool lock && systemctl suspend",
 			"shutdown": "poweroff",
 			"reboot": "reboot"
 		}

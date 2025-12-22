@@ -20,25 +20,25 @@
       "ctrl-shift-e": "workspace::ToggleRightDock",
       "ctrl-'": "terminal_panel::ToggleFocus",
       "ctrl-w": "pane::CloseActiveItem",
-      "ctrl-q": "project_panel::ToggleFocus"
-    }
+      "ctrl-q": "project_panel::ToggleFocus",
+    },
   },
   {
     "context": "Editor",
     "bindings": {
-      "alt-backspace": "editor::DeleteToPreviousWordStart"
-    }
+      "alt-backspace": "editor::DeleteToPreviousWordStart",
+    },
   },
   {
     "context": "(Editor && edit_prediction)",
     "bindings": {
-      "alt-n": "editor::AcceptEditPrediction"
-    }
+      "alt-n": "editor::AcceptEditPrediction",
+    },
   },
   {
     "context": "(Editor && edit_prediction_conflict)",
     "bindings": {
-      "alt-n": "editor::AcceptEditPrediction"
-    }
-  }
+      "alt-n": "editor::AcceptEditPrediction",
+    },
+  },
 ]

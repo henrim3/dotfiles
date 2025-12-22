@@ -10,9 +10,6 @@
   "edit_predictions": {
     "mode": "subtle"
   },
-  "features": {
-    "edit_prediction_provider": "zed"
-  },
   "outline_panel": {
     "dock": "right"
   },
