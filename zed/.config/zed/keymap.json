@@ -41,4 +41,11 @@
       "alt-n": "editor::AcceptEditPrediction",
     },
   },
+  {
+    "context": "Editor && showing_completions",
+    "bindings": {
+      "enter": "editor::Newline",
+      "tab": "editor::ConfirmCompletion",
+    },
+  },
 ]

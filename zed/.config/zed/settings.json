@@ -8,21 +8,21 @@
 // command palette (cmd-shift-p / ctrl-shift-p)
 {
   "edit_predictions": {
-    "mode": "subtle"
+    "mode": "subtle",
   },
   "outline_panel": {
-    "dock": "right"
+    "dock": "right",
   },
   "git_panel": {
-    "dock": "right"
+    "dock": "right",
   },
   "project_panel": {
     "auto_fold_dirs": false,
-    "dock": "right"
+    "dock": "right",
   },
   "telemetry": {
     "diagnostics": false,
-    "metrics": false
+    "metrics": false,
   },
   "vim_mode": true,
   "icon_theme": "Catppuccin Frappé",
@@ -31,11 +31,11 @@
   "theme": {
     "mode": "dark",
     "light": "Gruvbox Light",
-    "dark": "Palenight Theme"
+    "dark": "Palenight Theme",
   },
   "relative_line_numbers": "enabled",
   "cursor_blink": false,
   "cursor_shape": "underline",
   "buffer_font_family": "Hurmit Nerd Font Mono",
-  "ui_font_family": "Hurmit Nerd Font Mono"
+  "ui_font_family": "Hurmit Nerd Font Mono",
 }
