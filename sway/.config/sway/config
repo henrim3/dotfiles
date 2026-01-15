@@ -238,6 +238,8 @@ input "type:touchpad" {
     tap enabled
     natural_scroll enable
     scroll_factor 0.4
+    # dwt disabled # disable while typing
 }
 
 exec gammastep
+exec swaybg --image ~/.background-image
