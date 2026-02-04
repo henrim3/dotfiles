@@ -224,6 +224,8 @@ output eDP-1 {
 
 output HDMI-A-1 pos 1920 0
 
+output DP-1 pos -1920 0
+
 # Swap caps and escape
 input * {
     xkb_options "caps:swapescape"
