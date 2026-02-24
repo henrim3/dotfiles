@@ -1,7 +1,8 @@
+// https://github.com/EricsonWillians/oldschool-theme
 {
   "$schema": "https://zed.dev/schema/themes/v0.2.0.json",
   "name": "Oldschool QBasic",
-  "author": "Converted from VS Code theme",
+  "author": "Ericson Williams",
   "themes": [
     {
       "name": "Oldschool QBasic",
