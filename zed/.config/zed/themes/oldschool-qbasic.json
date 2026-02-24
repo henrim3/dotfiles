@@ -11,7 +11,7 @@
         "surface.background": "#000000ff",
         "elevated_surface.background": "#000000ff",
 
-        "border": "#ffffffff",
+        "border": "#ffffff88",
         "border.variant": "#ffffffff",
         "border.focused": "#ffffffff",
         "border.selected": "#ffffffff",
@@ -53,7 +53,7 @@
         "editor.background": "#000050ff",
         "editor.foreground": "#ffffffff",
         "editor.gutter.background": "#000050ff",
-        "editor.active_line.background": "#353535ff",
+        "editor.active_line.background": "#353535aa",
         "editor.highlighted_line.background": "#353535ff",
         "editor.line_number": "#8f8f8fff",
         "editor.active_line_number": "#ffffffff",

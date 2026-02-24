@@ -168,6 +168,7 @@ e() {
 }
 
 export PATH="$PATH":"$HOME/.pub-cache/bin"
+export PATH="/home/matti/fvm/bin:$PATH"
 
 # set emacs keybindings
 bindkey -e
