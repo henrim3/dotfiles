@@ -220,7 +220,7 @@
 		}
     },
     "custom/screenshot": {
-        "format": "󰍹",
+        "format": "󰹑",
         "on-click": "slurp | grim -g - - | wl-copy &> /dev/null",
         "interval": 0
     }

@@ -8,25 +8,26 @@
 // command palette (cmd-shift-p / ctrl-shift-p)
 {
   "agent": {
-    "dock": "right",
     "default_model": {
       "provider": "google",
-      "model": "gemini-2.5-flash-lite",
-      "enable_thinking": true,
+      "model": "gemini-3.1-pro-preview",
+      "enable_thinking": true
     },
     "favorite_models": [],
-    "model_parameters": [],
+    "model_parameters": []
   },
   "file_finder": {
-    "modal_max_width": "full",
+    "modal_max_width": "full"
   },
-  "hide_mouse": "on_typing_and_movement",
+  "features": {
+    "edit_prediction_provider": "zed",
+  },
+  "hide_mouse": "never",
   "soft_wrap": "none",
   "sticky_scroll": {
     "enabled": true,
   },
   "edit_predictions": {
-    "provider": "zed",
     "mode": "subtle",
   },
   "outline_panel": {

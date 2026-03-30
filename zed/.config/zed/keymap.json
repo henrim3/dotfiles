@@ -21,6 +21,7 @@
       "ctrl-'": "terminal_panel::ToggleFocus",
       "ctrl-w": "pane::CloseActiveItem",
       "ctrl-q": "project_panel::ToggleFocus",
+      "ctrl-shift-a": "agent::ToggleFocus",
     },
   },
   {
