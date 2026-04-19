@@ -55,4 +55,10 @@
       "tab": "pane::GoForward",
     },
   },
+  {
+    "context": "Terminal",
+    "bindings": {
+      "ctrl-n": "workspace::NewTerminal",
+    },
+  },
 ]
