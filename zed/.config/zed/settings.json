@@ -7,12 +7,20 @@
 // custom settings, run `zed: open default settings` from the
 // command palette (cmd-shift-p / ctrl-shift-p)
 {
+  "agent_servers": {
+    "codex": {
+      "default_mode": "read-only",
+      "favorite_config_option_values": {
+        "mode": ["read-only"],
+      },
+    },
+  },
   "agent": {
     "dock": "right",
     "default_model": {
-      "provider": "google",
-      "model": "gemini-2.5-flash-lite",
-      "enable_thinking": true,
+      "provider": "openai",
+      "model": "gpt-5.2",
+      "enable_thinking": false,
     },
     "favorite_models": [],
     "model_parameters": [],
