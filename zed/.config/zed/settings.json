@@ -7,13 +7,28 @@
 // custom settings, run `zed: open default settings` from the
 // command palette (cmd-shift-p / ctrl-shift-p)
 {
+  "languages": {
+    "C++": {
+      "format_on_save": "on",
+      "tab_size": 2
+    }
+  },
+  "cli_default_open_behavior": "new_window",
+  "collaboration_panel": {
+    "dock": "left"
+  },
   "agent_servers": {
-    "codex": {
-      "default_mode": "read-only",
-      "favorite_config_option_values": {
-        "mode": ["read-only"],
+    "codex-acp": {
+      "default_config_options": {
+        "mode": "read-only"
       },
-    },
+      "favorite_config_option_values": {
+        "mode": [
+          "read-only"
+        ]
+      },
+      "type": "registry"
+    }
   },
   "agent": {
     "dock": "right",
@@ -28,7 +43,7 @@
   "file_finder": {
     "modal_max_width": "full",
   },
-  "hide_mouse": "on_typing_and_movement",
+  "hide_mouse": "on_typing_and_action",
   "soft_wrap": "none",
   "sticky_scroll": {
     "enabled": true,
@@ -52,19 +67,30 @@
     "metrics": false,
   },
   "vim_mode": true,
-  "icon_theme": "Catppuccin Frappé",
+  "icon_theme": {
+    "mode": "light",
+    "light": "Catppuccin Frappé",
+    "dark": "Catppuccin Frappé"
+  },
   "theme": {
-    "mode": "dark",
+    "mode": "light",
     "light": "Ayu Light",
     "dark": "Palenight Theme",
   },
   "relative_line_numbers": "enabled",
   "cursor_blink": false,
   "cursor_shape": "underline",
+
   "buffer_font_family": "Hurmit Nerd Font Mono",
   "ui_font_family": "Hurmit Nerd Font Mono",
   "buffer_font_size": 14,
   "ui_font_size": 14.0,
+
+  // "buffer_font_family": "Print Char 21",
+  // "ui_font_family": "Print Char 21",
+  // "buffer_font_size": 12,
+  // "ui_font_size": 12.0,
+
   "show_wrap_guides": true,
   "wrap_guides": [80],
   "use_autoclose": false,
