@@ -245,3 +245,4 @@ input "type:touchpad" {
 
 exec gammastep
 exec swaybg --image ~/.background-image
+exec dbus-update-activation-environment --systemd DISPLAY

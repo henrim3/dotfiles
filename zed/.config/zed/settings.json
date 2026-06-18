@@ -68,12 +68,12 @@
   },
   "vim_mode": true,
   "icon_theme": {
-    "mode": "light",
+    "mode": "dark",
     "light": "Catppuccin Frappé",
     "dark": "Catppuccin Frappé"
   },
   "theme": {
-    "mode": "light",
+    "mode": "dark",
     "light": "Ayu Light",
     "dark": "Palenight Theme",
   },
