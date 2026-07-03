@@ -116,7 +116,7 @@ export CHROME_EXECUTABLE=/usr/bin/google-chrome-stable
 export IGNOREEOF=10
 export ALTERNATE_EDITOR=""
 
-export PATH=$PATH:/home/matti/.local/bin:/usr/local/bin:/home/matti/.config/emacs/bin
+export PATH=$PATH:/home/matti/.local/bin:/usr/local/bin:/home/matti/.config/emacs/bin:/home/matti/.emacs.d/bin
 
 export ANDROID_HOME=$HOME/Android/Sdk
 export PATH=$PATH:$ANDROID_HOME/platform-tools
@@ -172,3 +172,7 @@ export PATH="/home/matti/fvm/bin:$PATH"
 
 # set emacs keybindings
 bindkey -e
+
+
+# Added by Antigravity CLI installer
+export PATH="/home/matti/.local/bin:$PATH"
