@@ -325,3 +325,55 @@ label:focus {
 #privacy-item.audio-out {
     background-color: #0069d4;
 }
+
+/* Make all backgrounds transparent */
+#clock,
+#battery,
+#cpu,
+#memory,
+#disk,
+#temperature,
+#backlight,
+#network,
+#pulseaudio,
+#wireplumber,
+#custom-media,
+#tray,
+#mode,
+#idle_inhibitor,
+#scratchpad,
+#power-profiles-daemon,
+#mpd,
+#language,
+#keyboard-state,
+#privacy,
+#privacy-item {
+    background-color: transparent;
+}
+
+/* Make all text white */
+#clock,
+#battery,
+#cpu,
+#memory,
+#disk,
+#temperature,
+#backlight,
+#network,
+#pulseaudio,
+#wireplumber,
+#custom-media,
+#tray,
+#mode,
+#idle_inhibitor,
+#scratchpad,
+#power-profiles-daemon,
+#mpd,
+#language,
+#keyboard-state,
+#privacy,
+#privacy-item,
+#window,
+#workspaces button {
+    color: #ffffff;
+}
