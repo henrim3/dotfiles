@@ -36,24 +36,31 @@ return {
     config = function()
         require("fidget").setup {}
 
-        local lspconfig = require("lspconfig")
-
-        lspconfig.lua_ls.setup { {
+        vim.lsp.config("lua_ls", {
             settings = {
                 Lua = {
                     diagnostics = {
-                        globals = { "vim" }
-                    }
-                }
-            }
-        } }
+                        globals = { "vim" },
+                    },
+                },
+            },
+        })
 
-        lspconfig["hls"].setup {
+        vim.lsp.config("hls", {
             filetypes = { "haskell", "lhaskell", "cabal" },
-        }
-        lspconfig.pylsp.setup {}
-        lspconfig.typos_lsp.setup {}
-        lspconfig.clangd.setup {}
+        })
+
+        vim.lsp.config("pylsp", {})
+        vim.lsp.config("typos_lsp", {})
+        vim.lsp.config("clangd", {})
+
+        vim.lsp.enable({
+            "lua_ls",
+            "hls",
+            "pylsp",
+            "typos_lsp",
+            "clangd",
+        })
 
         local cmp = require "cmp"
         local cmp_select = { behavior = cmp.SelectBehavior.Select }
