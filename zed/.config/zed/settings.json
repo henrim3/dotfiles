@@ -7,35 +7,50 @@
 // custom settings, run `zed: open default settings` from the
 // command palette (cmd-shift-p / ctrl-shift-p)
 {
+  "diff_view_style": "split",
+  "terminal": {
+    "copy_on_select": false,
+    "toolbar": {
+      "breadcrumbs": true,
+    },
+    "show_count_badge": false,
+  },
   "languages": {
     "C++": {
       "format_on_save": "on",
-      "tab_size": 2
-    }
+      "tab_size": 2,
+    },
   },
   "cli_default_open_behavior": "new_window",
   "collaboration_panel": {
-    "dock": "left"
+    "dock": "left",
   },
   "agent_servers": {
+    "github-copilot-cli": {
+      "type": "registry",
+    },
+    "gemini": {
+      "type": "registry",
+    },
     "cursor": {
-      "default_config_options": {
-        "mode": "agent",
-        "model": "gpt-5.5[context=272k,reasoning=medium,fast=false]"
+      "favorite_config_option_values": {
+        "model": ["grok-4.5[effort=high,fast=true]", "composer-2.5[fast=true]"],
       },
-      "type": "registry"
+      "default_config_options": {
+        "mode": "ask",
+        "model": "composer-2.5[fast=true]",
+      },
+      "type": "registry",
     },
     "codex-acp": {
       "default_config_options": {
-        "mode": "read-only"
+        "mode": "read-only",
       },
       "favorite_config_option_values": {
-        "mode": [
-          "read-only"
-        ]
+        "mode": ["read-only"],
       },
-      "type": "registry"
-    }
+      "type": "registry",
+    },
   },
   "agent": {
     "dock": "right",
@@ -77,12 +92,12 @@
   "icon_theme": {
     "mode": "dark",
     "light": "Catppuccin Frappé",
-    "dark": "Catppuccin Frappé"
+    "dark": "Catppuccin Frappé",
   },
   "theme": {
     "mode": "dark",
     "light": "Ayu Light",
-    "dark": "Palenight Theme",
+    "dark": "Oldschool QBasic",
   },
   "relative_line_numbers": "enabled",
   "cursor_blink": false,
@@ -95,6 +110,11 @@
 
   // "buffer_font_family": "Print Char 21",
   // "ui_font_family": "Print Char 21",
+  // "buffer_font_size": 12,
+  // "ui_font_size": 12.0,
+
+  // "buffer_font_family": "Ac437 IBM BIOS",
+  // "ui_font_family": "Ac437 IBM BIOS",
   // "buffer_font_size": 12,
   // "ui_font_size": 12.0,
 
