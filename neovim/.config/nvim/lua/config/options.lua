@@ -17,7 +17,7 @@ vim.opt.expandtab = true
 
 vim.api.nvim_create_autocmd({ "BufEnter", "BufWinEnter" }, {
     pattern = "*",
-    callback = function(ev)
+    callback = function(_)
         vim.wo.number = true
         vim.wo.relativenumber = true
     end
