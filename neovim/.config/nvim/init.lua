@@ -1,5 +1,7 @@
 require("config.keymaps")
 
+vim.opt.undofile = true
+
 -- lazy.nvim
 local lazypath = vim.fn.stdpath("data") .. "/lazy/lazy.nvim"
 if not vim.loop.fs_stat(lazypath) then
