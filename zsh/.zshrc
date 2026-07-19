@@ -137,6 +137,8 @@ alias mv="mv -i"
 alias rm="trash -v"
 alias c="clear"
 alias lg="lazygit"
+alias t="tree -C -L 2 | less -X -R"
+alias t3="tree -C -L 3 | less -X -R"
 
 # Tmux Aliases
 alias tmux="TERM=tmux-256color tmux"
