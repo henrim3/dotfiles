@@ -71,9 +71,26 @@ return {
                     require("luasnip").lsp_expand(args.body) -- For `luasnip` users.
                 end,
             },
+            completion = {
+                keyword_length = 2,
+            },
+
+            performance = {
+                max_view_entries = 20,
+            },
+
             window = {
-                completion = cmp.config.window.bordered(),
-                documentation = cmp.config.window.bordered(),
+                completion = {
+                    border = "rounded",
+                    scrollbar = false,
+                    col_offset = -3,
+                    side_padding = 1,
+                },
+                documentation = {
+                    border = "rounded",
+                    max_width = 60,
+                    max_height = 15,
+                },
             },
             mapping = cmp.mapping.preset.insert({
                 ["<C-p>"] = cmp.mapping.select_prev_item(cmp_select),
