@@ -1,3 +1,5 @@
+-- Based on Oldschool QBasic VSCode theme by Ericson Williams
+
 vim.cmd("highlight clear")
 
 if vim.fn.exists("syntax_on") then
