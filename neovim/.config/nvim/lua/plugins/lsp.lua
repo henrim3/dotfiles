@@ -50,16 +50,29 @@ return {
             filetypes = { "haskell", "lhaskell", "cabal" },
         })
 
-        vim.lsp.config("pylsp", {})
+        vim.lsp.config("pyright", {})
         vim.lsp.config("typos_lsp", {})
         vim.lsp.config("clangd", {})
+
+        vim.lsp.config("kotlin_language_server", {
+            cmd = { "kotlin-lsp" },
+            filetypes = { "kotlin" },
+            root_markers = {
+                "settings.gradle",
+                "settings.gradle.kts",
+                "build.gradle",
+                "build.gradle.kts",
+                ".git",
+            },
+        })
 
         vim.lsp.enable({
             "lua_ls",
             "hls",
-            "pylsp",
+            "pyright",
             "typos_lsp",
             "clangd",
+            "kotlin_language_server",
         })
 
         local cmp = require "cmp"
