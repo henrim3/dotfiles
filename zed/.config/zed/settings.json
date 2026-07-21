@@ -37,7 +37,7 @@
         "model": ["grok-4.5[effort=high,fast=true]", "composer-2.5[fast=true]"],
       },
       "default_config_options": {
-        "mode": "ask",
+        "mode": "agent",
         "model": "composer-2.5[fast=true]",
       },
       "type": "registry",
