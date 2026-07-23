@@ -146,7 +146,15 @@ alias ta="tmux a"
 alias tas="tmux a -t"
 alias tls="tmux list-sessions"
 alias tks="tmux kill-session -t"
-alias tns="tmux new -s"
+
+function tns () {
+    if [[ $# -gt 0 ]]; then
+        tmux new -s "$*"
+    else
+        local dir="${PWD##*/}"
+        tmux new -s "${dir:-root}"
+    fi
+}
 
 function cl () {
     cd "$@" && ll
