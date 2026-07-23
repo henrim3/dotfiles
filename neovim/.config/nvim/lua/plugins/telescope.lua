@@ -14,5 +14,6 @@ return {
         vim.keymap.set('n', '<leader>ds', builtin.lsp_document_symbols)
         vim.keymap.set('n', '<leader>ws', builtin.lsp_dynamic_workspace_symbols)
         vim.keymap.set('n', '<leader>fr', '<cmd>Telescope oldfiles<cr>')
+        vim.keymap.set('n', '<leader>rr', builtin.resume)
     end,
 }
