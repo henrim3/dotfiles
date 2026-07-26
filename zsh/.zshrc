@@ -110,8 +110,8 @@ source $ZSH/oh-my-zsh.sh
 # xset -b
 
 # Environment Variables
-export EDITOR=/usr/bin/nvim
-export VISUAL=/usr/bin/nvim
+export EDITOR=nvim
+export VISUAL=nvim
 export CHROME_EXECUTABLE=/usr/bin/google-chrome-stable
 export IGNOREEOF=10
 export ALTERNATE_EDITOR=""
