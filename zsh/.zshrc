@@ -192,3 +192,5 @@ if [ -f '/home/matti/dev/google-cloud-sdk/path.zsh.inc' ]; then . '/home/matti/d
 
 # The next line enables shell command completion for gcloud.
 if [ -f '/home/matti/dev/google-cloud-sdk/completion.zsh.inc' ]; then . '/home/matti/dev/google-cloud-sdk/completion.zsh.inc'; fi
+
+ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE='fg=#7c8498'
