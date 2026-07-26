@@ -122,6 +122,10 @@ hi("DiagnosticError", { fg = c.red })
 hi("DiagnosticWarn",  { fg = c.yellow })
 hi("DiagnosticInfo",  { fg = c.blue })
 hi("DiagnosticHint",  { fg = c.green })
+hi("DiagnosticLineNrError", { link = "DiagnosticError" })
+hi("DiagnosticLineNrWarn",  { link = "DiagnosticWarn" })
+hi("DiagnosticLineNrInfo",  { link = "DiagnosticInfo" })
+hi("DiagnosticLineNrHint",  { link = "DiagnosticHint" })
 
 ---------------------------------------------------------------------
 -- Git
