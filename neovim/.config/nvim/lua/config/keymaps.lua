@@ -2,6 +2,7 @@ vim.g.mapleader = " "
 
 --vim.keymap.set('n', '<leader>pv', ':Ex<CR>', { noremap = true })
 vim.keymap.set('i', '<M-BS>', '<C-w>', { noremap = true })
+vim.keymap.set('c', '<M-BS>', '<C-w>', { noremap = true })
 
 -- move selected lines
 vim.keymap.set("x", "J", ":move '>+1<CR>gv=gv")
