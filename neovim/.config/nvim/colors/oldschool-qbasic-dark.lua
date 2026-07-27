@@ -183,3 +183,97 @@ hi("@lsp.type.function",    { fg = c.green })
 hi("@lsp.type.method",      { fg = c.green })
 hi("@lsp.type.type",        { fg = c.blue, italic = true })
 hi("@lsp.type.namespace",   { fg = c.blue, italic = true })
+
+---------------------------------------------------------------------
+-- Neo-tree
+---------------------------------------------------------------------
+
+hi("NeoTreeNormal", {
+  fg = c.fg,
+  bg = c.bg,
+})
+
+hi("NeoTreeNormalNC", {
+  fg = c.muted,
+  bg = c.bg,
+})
+
+hi("NeoTreeEndOfBuffer", {
+  fg = c.bg,
+})
+
+-- Root
+hi("NeoTreeRootName", {
+  fg = c.blue,
+  bold = true,
+})
+
+-- Files / directories
+hi("NeoTreeFileName", {
+  fg = c.fg,
+})
+
+hi("NeoTreeFileIcon", {
+  fg = c.fg,
+})
+
+hi("NeoTreeDirectoryName", {
+  fg = c.blue,
+})
+
+hi("NeoTreeDirectoryIcon", {
+  fg = c.blue,
+})
+
+-- Tree UI
+hi("NeoTreeIndentMarker", {
+  fg = c.gray3,
+})
+
+hi("NeoTreeExpander", {
+  fg = c.gray3,
+})
+
+hi("NeoTreeFloatBorder", {
+  fg = c.blue,
+  bg = c.bg,
+})
+
+hi("NeoTreeTitleBar", {
+  fg = c.bg,
+  bg = c.blue,
+  bold = true,
+})
+
+hi("NeoTreeFloatTitle", {
+  fg = c.bg,
+  bg = c.blue,
+  bold = true,
+})
+
+-- Git status
+hi("NeoTreeGitAdded", {
+  fg = c.green,
+})
+
+hi("NeoTreeGitModified", {
+  fg = c.yellow,
+})
+
+hi("NeoTreeGitDeleted", {
+  fg = c.red,
+})
+
+hi("NeoTreeGitConflict", {
+  fg = c.red,
+  bold = true,
+})
+
+hi("NeoTreeGitIgnored", {
+  fg = c.disabled,
+})
+
+-- Selected item
+hi("NeoTreeCursorLine", {
+  bg = c.gray,
+})
