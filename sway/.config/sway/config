@@ -148,9 +148,6 @@ bindsym $mod+period focus output up
 bindsym $mod+m focus output left
 bindsym $mod+slash focus output right
 
-# restart i3 inplace (preserves your layout/session, can be used to upgrade i3)
-bindsym $mod+Shift+r restart
-
 # resize window (you can also use the mouse for that)
 mode "resize" {
         # These bindings trigger as soon as you enter the resize mode
@@ -246,3 +243,4 @@ input "type:touchpad" {
 exec gammastep
 exec swaybg --image ~/.background-image
 exec dbus-update-activation-environment --systemd DISPLAY
+exec systemctl --user import-environment WAYLAND_DISPLAY SWAYSOCK XDG_CURRENT_DESKTOP XDG_SESSION_TYPE
