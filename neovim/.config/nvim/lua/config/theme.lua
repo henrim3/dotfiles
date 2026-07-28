@@ -1,4 +1,5 @@
 -- vim.cmd('colorscheme palenight')
--- vim.cmd('colorscheme oldschool-qbasic')
-vim.cmd('colorscheme oldschool-qbasic-dark')
+vim.cmd('colorscheme oldschool-qbasic')
+-- vim.cmd('colorscheme oldschool-qbasic-dark')
 -- vim.cmd('colorscheme templeos')
+-- vim.cmd('colorscheme templeos-dark')
