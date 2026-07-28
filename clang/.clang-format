@@ -7,8 +7,14 @@ AllowShortLoopsOnASingleLine: false
 
 SpacesInParens: Custom
 SpacesInParensOptions:
+  ExceptDoubleParentheses: true
+  InConditionalStatements: true
+  InCStyleCasts: false
+  InEmptyParentheses: false
   Other: true
 
 # DerivePointerAlignment: false
 PointerAlignment: Middle
 ContinuationIndentWidth: 2
+
+IndentCaseLabels: true
