@@ -14,7 +14,7 @@ vim.opt.tabstop = 4
 vim.opt.shiftwidth = 4
 vim.opt.expandtab = true
 
--- ruler (see virtcolumn plugin)
+-- ruler
 vim.opt.colorcolumn = "80"
 
 -- I think this is so every buffer has relative line numbers

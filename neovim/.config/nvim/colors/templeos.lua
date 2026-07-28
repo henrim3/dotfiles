@@ -70,6 +70,10 @@ hl("IncSearch", {
   bg = colors.blue,
 })
 
+hl("ColorColumn", {
+  bg = "#eeeeee",
+})
+
 
 -- Syntax
 
