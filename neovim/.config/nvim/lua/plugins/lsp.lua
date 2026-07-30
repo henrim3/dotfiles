@@ -50,7 +50,11 @@ return {
             filetypes = { "haskell", "lhaskell", "cabal" },
         })
 
-        vim.lsp.config("pyright", {})
+        vim.lsp.config("pyright", {
+            root_dir = function(_, on_dir)
+                on_dir(vim.fn.getcwd())
+            end
+        })
         vim.lsp.config("typos_lsp", {})
         vim.lsp.config("clangd", {})
 
