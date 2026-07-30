@@ -18,3 +18,5 @@ PointerAlignment: Middle
 ContinuationIndentWidth: 2
 
 IndentCaseLabels: true
+
+BreakTemplateDeclarations: Yes
