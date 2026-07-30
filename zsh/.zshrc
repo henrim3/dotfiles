@@ -147,12 +147,19 @@ alias tas="tmux a -t"
 alias tls="tmux list-sessions"
 alias tks="tmux kill-session -t"
 
-function tns () {
+function tns() {
     if [[ $# -gt 0 ]]; then
         tmux new -s "$*"
     else
-        local dir="${PWD##*/}"
-        tmux new -s "${dir:-root}"
+        local parent="${PWD%/*}"      # /home/me/foo
+        parent="${parent##*/}"        # foo
+        local current="${PWD##*/}"    # bar
+
+        if [[ "$PWD" == "/" ]]; then
+            tmux new -s root
+        else
+            tmux new -s "${parent}/${current}"
+        fi
     fi
 }
 
