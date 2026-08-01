@@ -53,7 +53,7 @@ hi("lCursor",        { fg = c.bg, bg = c.cursor })
 hi("TermCursor",     { reverse = true })
 
 hi("Visual",         { bg = c.gray })
-hi("Search",         { fg = c.bg, bg = "#bb0000" })
+hi("Search",         { fg = c.bg, bg = c.blue})
 hi("IncSearch",      { fg = c.bg, bg = c.orange })
 
 hi("StatusLine",     { fg = c.fg, bg = c.gray })
