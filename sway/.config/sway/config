@@ -240,7 +240,7 @@ input "type:touchpad" {
     # dwt disabled # disable while typing
 }
 
-exec gammastep
-exec swaybg --image ~/.background-image
-exec dbus-update-activation-environment --systemd DISPLAY
-exec systemctl --user import-environment WAYLAND_DISPLAY SWAYSOCK XDG_CURRENT_DESKTOP XDG_SESSION_TYPE
+exec_always gammastep
+exec_always swaybg --image ~/.background-image
+exec_always dbus-update-activation-environment --systemd DISPLAY
+exec_always systemctl --user import-environment WAYLAND_DISPLAY SWAYSOCK XDG_CURRENT_DESKTOP XDG_SESSION_TYPE
