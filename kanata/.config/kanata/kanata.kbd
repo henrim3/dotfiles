@@ -9,15 +9,15 @@
 
 (defvar
   tap-time 200
-  hold-time 250
+  hold-time 200
 )
 
 (defalias
   s (tap-hold $tap-time $hold-time s lctrl)
   d (tap-hold $tap-time $hold-time d lalt)
-  f (tap-hold $tap-time $hold-time f lsft)
+  f (tap-hold 150 $hold-time f lsft)
 
-  j (tap-hold $tap-time $hold-time j rsft)
+  j (tap-hold 150 $hold-time j rsft)
   k (tap-hold $tap-time $hold-time k lalt)
   l (tap-hold $tap-time $hold-time l rctrl)
 )

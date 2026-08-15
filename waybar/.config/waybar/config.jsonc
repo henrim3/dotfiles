@@ -16,6 +16,7 @@
     //     "sway/window"
     // ],
     "modules-right": [
+        "custom/kill-kanata",
         "custom/screenshot",
         "mpd",
         "pulseaudio",
@@ -25,7 +26,6 @@
         "memory",
         "temperature",
         "backlight",
-        "keyboard-state",
         "battery",
         "battery#bat2",
         "clock",
@@ -218,6 +218,11 @@
 			"shutdown": "poweroff",
 			"reboot": "reboot"
 		}
+    },
+    "custom/kill-kanata": {
+        "format": "",
+        "on-click": "systemctl --user stop kanata.service",
+        "interval": 0
     },
     "custom/screenshot": {
         "format": "󰹑",
