@@ -156,9 +156,9 @@ function tns() {
         local current="${PWD##*/}"    # bar
 
         if [[ "$PWD" == "/" ]]; then
-            tmux new -s root
+            tmux new -A -s root
         else
-            tmux new -s "${parent}/${current}"
+            tmux new -A -s "${parent}/${current}"
         fi
     fi
 }
