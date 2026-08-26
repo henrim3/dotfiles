@@ -5,11 +5,12 @@
 (defsrc
   s d f h j k l
   lctl rctl lalt ralt lsft rsft lmet rmet
+  left down up right
 )
 
 (defvar
   tap-time 200
-  hold-time 200
+  hold-time 180
 )
 
 (defalias
@@ -21,15 +22,17 @@
   k (tap-hold $tap-time $hold-time k lalt)
   l (tap-hold $tap-time $hold-time l rctrl)
 
-  arrows (layer-while-held arrows)
+  layer1 (layer-while-held layer1)
 )
 
 (deflayer base
   @s @d @f h @j @k @l  
-  XX XX @arrows XX XX XX XX XX
+  XX XX @layer1 XX XX XX XX XX
+  XX XX XX XX
 )
 
-(deflayer arrows
+(deflayer layer1
   XX XX XX left down up right
   XX XX XX XX XX XX XX XX
+  XX XX XX XX
 )
