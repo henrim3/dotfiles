@@ -70,6 +70,8 @@ return {
             },
         })
 
+        vim.lsp.config("roslyn_ls", {})
+
         vim.lsp.enable({
             "lua_ls",
             "hls",
@@ -77,6 +79,7 @@ return {
             "typos_lsp",
             "clangd",
             "kotlin_language_server",
+            "roslyn_ls",
         })
 
         local cmp = require "cmp"
