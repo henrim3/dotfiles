@@ -201,3 +201,7 @@ if [ -f '/home/matti/dev/google-cloud-sdk/path.zsh.inc' ]; then . '/home/matti/d
 if [ -f '/home/matti/dev/google-cloud-sdk/completion.zsh.inc' ]; then . '/home/matti/dev/google-cloud-sdk/completion.zsh.inc'; fi
 
 ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE='fg=#7c8498'
+export PATH="$HOME/.local/bin:$PATH"
+
+[ -f ~/.config/bookstack/mcp.env ] && source ~/.config/bookstack/mcp.env
+export PATH="$PATH:/home/matti/.dotnet/tools"
