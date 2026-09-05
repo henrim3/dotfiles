@@ -10,7 +10,7 @@
 
 (defvar
   tap-time 200
-  hold-time 180
+  hold-time 175
 )
 
 (defalias
@@ -27,8 +27,8 @@
 
 (deflayer base
   @s @d @f h @j @k @l  
-  XX XX @layer1 XX XX XX XX XX
-  XX XX XX XX
+  lctl rctl @layer1 ralt lsft rsft lmet rmet
+  left down up right
 )
 
 (deflayer layer1
