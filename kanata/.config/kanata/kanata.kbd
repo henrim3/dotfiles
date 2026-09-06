@@ -1,5 +1,12 @@
 (defcfg
   process-unmapped-keys yes
+
+  linux-dev-names-exclude (
+    "GEIST TOTEM Keyboard"
+    "GEIST TOTEM Consumer Control"
+    "GEIST TOTEM System Control"
+    "GEIST TOTEM"
+  )
 )
 
 (defsrc
