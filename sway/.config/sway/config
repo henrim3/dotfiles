@@ -222,6 +222,11 @@ output eDP-1 {
 output HDMI-A-1 pos 1920 0
 
 output DP-1 pos -1920 0
+output "TGD U156 Unknown" {
+    scale 1.5
+    pos -1707 0
+    mode 2560x1440@60Hz
+}
 
 # Swap caps and escape
 input * {
